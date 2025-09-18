@@ -1,0 +1,26 @@
+/* Reset CSS de base */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables CSS globales */
+:root {
+    --primary-color: #149B2A;
+    --primary-dark: #0f7a1f;
+    --text-color: #333;
+    --border-color: #ddd;
+}
+
+/* Styles de base pour le conteneur root */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+#root {
+    min-height: 100vh;
+    width: 100%;
+}
