@@ -57,8 +57,44 @@ function registerForm(){
         </div>
     `;   
 }
+
+function addPatientForm(){
+    return `
+        <div>
+            <div>
+                <h2>New Patient</h2>
+                <div><span>&times;</span></div>
+            </div>
+            <div>
+                <div>
+                    <label for="fullName">Full Name</label>
+                    <input type="text" name="fullName" id="fullName">
+                </div>
+                <div>
+                    <label for="phone">Phone Numbre</label>
+                    <input type="text" name="phone" id="phone">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div>
+                    <label for="note">Note</label>
+                    <textarea name="note" id="note"></textarea>
+                </div>
+            </div>
+            <div>
+                <button>Add</button>
+                <button>Cancel</button>
+            </div>
+        </div>
+    `;
+}
+
+
 export default {
     loginForm,
     registerForm,
+    addPatientForm,
     
 };
