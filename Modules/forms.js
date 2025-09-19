@@ -5,6 +5,7 @@ function loginForm(){
                 <div>
                     <h1>LOGIN</h1>
                 </div>
+                <div id="msg"></div>
                 <div>
                     <div>
                         <label for="userName">User Name</label>
@@ -33,6 +34,7 @@ function registerForm(){
                 <div>
                     <h1>LOGIN</h1>
                 </div>
+                <div id="msg"></div>
                 <div>
                     <div>
                         <label for="userName">User Name</label>
@@ -65,6 +67,7 @@ function addPatientForm(){
                 <h2>New Patient</h2>
                 <div><span>&times;</span></div>
             </div>
+            <div id="msg"></div>
             <div>
                 <div>
                     <label for="fullName">Full Name</label>
