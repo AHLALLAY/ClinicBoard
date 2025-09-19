@@ -94,6 +94,65 @@ function addPatientForm(){
     `;
 }
 
+function dashboard (){
+    return `
+        <div>
+            <div>
+                navbar()
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <h2>Chiffre d’affaires mensuel</h2>
+                        <div>
+                            <span></span>Dh
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Total dépenses</h2>
+                        <div>
+                            <span></span>Dh
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Marge </h2>
+                        <div>
+                            <span></span>Dh
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h2>nombre de patients</h2>
+                        <div>
+                            <span></span>Dh
+                        </div>
+                    </div>
+                    <div>
+                        <h2>nombre de consultations</h2>
+                        <div>
+                            <span></span>Dh
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+function navbar(){
+    return `
+        <div>
+            <div>ClinicBoard</div>
+            <div>
+                <a href="" data-route="dashboard">Dashboard</a>
+                <a href="" data-route="patient">Patient</a>
+                <a href="" data-route="recipes">Recipes</a>
+                <button >Logout</button>
+            </div>
+        </div>
+    `;
+}
 function displayMsg(msg, type){
     const msgDiv = document.getElementById("msg");
 
