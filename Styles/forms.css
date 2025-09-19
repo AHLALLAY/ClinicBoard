@@ -1,0 +1,101 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    min-height: 85vh;
+}
+
+.container form{
+    border: 1px solid #149B2A;
+    padding: 20px;
+    width: 20rem;
+    min-height: 20rem;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styles spécifiques pour h2 dans les formulaires */
+.container h2{
+    text-align: center;
+    color: var(--primary-color);
+}
+
+/* Styles pour les labels */
+.container label {
+    display: block;
+    margin: 10px 0 5px 0;
+    color: var(--text-color);
+}
+
+/* Styles pour les inputs */
+.container input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Styles spécifiques pour les boutons */
+.container button {
+    width: 100%;
+    padding: 10px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: auto; /* Pousse le bouton vers le bas */
+}
+
+.container button:hover {
+    background: var(--primary-dark);
+}
+
+/* Styles pour les messages d'erreur et de succès */
+#msg {
+    text-align: center;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px 0;
+    min-height: 20px;
+}
+
+.error-msg {
+    background-color: #ffebee;
+    color: #c62828;
+    border: 1px solid #ffcdd2;
+}
+
+.success-msg {
+    background-color: #e8f5e8;
+    color: #2e7d32;
+    border: 1px solid #c8e6c9;
+}
+
+/* Styles pour les liens de navigation */
+.container p {
+    margin: 15px 0 0 0;
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+.container a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.container a:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
