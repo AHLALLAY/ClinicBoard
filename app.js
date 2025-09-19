@@ -1,10 +1,10 @@
-import forms from './Modules/forms.js';
+import router from './Router/router.js';
 
 function init() {
     if (!localStorage.getItem("Users")) localStorage.setItem("Users", JSON.stringify([]));
     if (!localStorage.getItem("Patients")) localStorage.setItem("Patients", JSON.stringify([]));
-    if (!localStorage.getItem("Recette")) localStorage.setItem("Recette", JSON.stringify([]));
-    if (!localStorage.getItem("RDV")) localStorage.setItem("RDV", JSON.stringify([]));
+    if (!localStorage.getItem("Recipes")) localStorage.setItem("Recipes", JSON.stringify([]));
+    if (!localStorage.getItem("Appointments")) localStorage.setItem("Appointments", JSON.stringify([]));
     
     const root = document.getElementById('root');
     const currentUser = localStorage.getItem("currentUser");
@@ -12,7 +12,7 @@ function init() {
     if (currentUser) {
         root.innerHTML = `<div><h1>this is your dashboard</h1></div>`;
     } else {
-        root.innerHTML = forms.loginForm();
+        router.router("login");
     }
 }
 
