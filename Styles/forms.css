@@ -58,27 +58,11 @@
     background: var(--primary-dark);
 }
 
-/* Styles pour les messages d'erreur et de succès */
+/* Conteneur de message pour les formulaires */
 #msg {
-    text-align: center;
-    padding: 8px;
-    border-radius: 4px;
-    font-size: 14px;
-    font-weight: bold;
     margin: 10px 0;
     min-height: 20px;
-}
-
-.error-msg {
-    background-color: #ffebee;
-    color: #c62828;
-    border: 1px solid #ffcdd2;
-}
-
-.success-msg {
-    background-color: #e8f5e8;
-    color: #2e7d32;
-    border: 1px solid #c8e6c9;
+    font-size: 14px;
 }
 
 /* Styles pour les liens de navigation */
@@ -86,6 +70,7 @@
     margin: 15px 0 0 0;
     font-size: 14px;
     color: var(--text-color);
+    text-align: center;
 }
 
 .container a {
