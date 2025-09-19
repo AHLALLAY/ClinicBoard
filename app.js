@@ -12,8 +12,9 @@ function init() {
     if (currentUser) {
         root.innerHTML = `<div><h1>this is your dashboard</h1></div>`;
     } else {
-        router.router("login");
+        router("login");
     }
 }
+init();
 
 export default init;
