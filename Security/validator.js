@@ -12,4 +12,23 @@ function validateLoginData(username, password) {
     return { isValid: !errors.length, errors };
 }
 
-export default { validateLoginData };
+function validatePatientData(name, phone, email) {
+    const errors = [];
+    
+    // Validation des champs requis
+    if (!name || name.trim() === '') errors.push('Le nom complet est requis');
+    if (!phone || phone.trim() === '') errors.push('Le numéro de téléphone est requis');
+    if (!email || email.trim() === '') errors.push('L\'email est requis');
+    
+    // Validation des formats
+    if (name && name.length < 2) errors.push('Le nom doit contenir au moins 2 caractères');
+    if (phone && !/^[0-9+\-\s()]+$/.test(phone)) errors.push('Format de téléphone invalide');
+    if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) errors.push('Format d\'email invalide');
+    
+    return { isValid: !errors.length, errors };
+}
+
+export default { 
+    validateLoginData,
+    validatePatientData 
+};
