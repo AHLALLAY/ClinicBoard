@@ -91,10 +91,26 @@ function addPatientForm(){
     `;
 }
 
+function displayMsg(msg, type){
+    const msgDiv = document.getElementById("msg");
+
+    if(!msgDiv){
+        console.error("Elément msg non trouvé");
+        return;
+    }
+
+    msgDiv.innerHTML = msg;
+    msgDiv.classList.remove('success-msg', 'error-msg');
+    if(type === "error"){
+        msgDiv.classList.add('error-msg');
+    }else{
+        msgDiv.classList.add('success-msg');
+    }
+}
 
 export default {
     loginForm,
     registerForm,
     addPatientForm,
-
+    displayMsg,
 };
