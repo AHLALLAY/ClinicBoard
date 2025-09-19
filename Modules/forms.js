@@ -20,7 +20,7 @@ function loginForm(){
                     <button type="submit">Login</button>
                 </div>
                 <p>
-                    you haven't an account? <a href="">subscribe</a>
+                    you haven't an account? <a href="#" data-route="register">subscribe</a>
                 </p>
             </form>
         </div>
@@ -53,7 +53,7 @@ function registerForm(){
                     <button type="submit">Register</button>
                 </div>
                 <p>
-                    you have an account? <a href="">login</a>
+                    you have an account? <a href="#" data-route="login">login</a>
                 </p>
             </form>
         </div>
