@@ -1,20 +1,24 @@
 import forms from '../Modules/forms.js';
+
 function router(page){
-    let component = '';
-
-    switch (page){
-        case 'login':
-            component = forms.loginForm();
-            break;
-        case 'register':
-            component = forms.registerForm();
-            break;
-        default:
-            component = forms.loginForm();
-            break;
+    // Rendu des composants
+    const components = {
+        'login': forms.loginForm(),
+        'register': forms.registerForm()
+    };
+    
+    document.getElementById('root').innerHTML = components[page] || forms.loginForm();
+    
+    // Navigation automatique (une seule fois)
+    if (!window.routerInitialized) {
+        document.addEventListener('click', (e) => {
+            if (e.target.matches('a[data-route]')) {
+                e.preventDefault();
+                router(e.target.dataset.route);
+            }
+        });
+        window.routerInitialized = true;
     }
-
-    document.getElementById('root').innerHTML = component;
 }
 
 export default router;
