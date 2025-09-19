@@ -32,7 +32,7 @@ function registerForm(){
         <div>
             <form>
                 <div>
-                    <h1>LOGIN</h1>
+                    <h1>REGISTER</h1>
                 </div>
                 <div id="msg"></div>
                 <div>
@@ -46,11 +46,11 @@ function registerForm(){
                     </div>
                     <div>
                         <label for="pwdConfirmed">Password Confirmed</label>
-                        <input type="password confirmation" name="pwdConfirmed" id="pwdConfirmed" placeholder="Password Confirmed">
+                        <input type="password" name="pwdConfirmed" id="pwdConfirmed" placeholder="Password Confirmed">
                     </div>
                 </div>
                 <div>
-                    <button type="submit">Login</button>
+                    <button type="submit">Register</button>
                 </div>
                 <p>
                     you have an account? <a href="">login</a>
@@ -74,7 +74,7 @@ function addPatientForm(){
                     <input type="text" name="fullName" id="fullName">
                 </div>
                 <div>
-                    <label for="phone">Phone Numbre</label>
+                    <label for="phone">Phone Number</label>
                     <input type="text" name="phone" id="phone">
                 </div>
                 <div>
@@ -98,7 +98,7 @@ function displayMsg(msg, type){
     const msgDiv = document.getElementById("msg");
 
     if(!msgDiv){
-        console.error("Elément msg non trouvé");
+        console.error("Message element not found");
         return;
     }
 
