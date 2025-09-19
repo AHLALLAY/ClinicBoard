@@ -10,7 +10,7 @@ function init() {
     const currentUser = localStorage.getItem("currentUser");
     
     if (currentUser) {
-        root.innerHTML = `<div><h1>this is your dashboard</h1></div>`;
+        router("dashboard");
     } else {
         router("login");
     }
