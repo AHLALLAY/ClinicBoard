@@ -4,7 +4,8 @@ function router(page){
     // Rendu des composants
     const components = {
         'login': forms.loginForm(),
-        'register': forms.registerForm()
+        'register': forms.registerForm(),
+        'dashboard': forms.dashboard(),
     };
     
     document.getElementById('root').innerHTML = components[page] || forms.loginForm();

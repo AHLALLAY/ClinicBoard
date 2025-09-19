@@ -174,5 +174,6 @@ export default {
     loginForm,
     registerForm,
     addPatientForm,
+    dashboard,
     displayMsg,
 };
