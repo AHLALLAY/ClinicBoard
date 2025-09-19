@@ -1,9 +1,9 @@
 function loginForm(){
     return `
-        <div>
+        <div class="container">
             <form>
                 <div>
-                    <h1>LOGIN</h1>
+                    <h2>LOGIN</h2>
                 </div>
                 <div id="msg"></div>
                 <div>
@@ -29,10 +29,10 @@ function loginForm(){
 
 function registerForm(){
     return `
-        <div>
+        <div class="container">
             <form>
                 <div>
-                    <h1>REGISTER</h1>
+                    <h2>REGISTER</h2>
                 </div>
                 <div id="msg"></div>
                 <div>
