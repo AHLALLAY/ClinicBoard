@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Fond du logo -->
+  <rect width="32" height="32" rx="6" fill="#33CC77"/>
+  
+  <!-- Icône hôpital -->
+  <rect x="8" y="6" width="16" height="20" rx="2" fill="white"/>
+  
+  <!-- Croix médicale -->
+  <rect x="14" y="8" width="4" height="16" fill="#33CC77"/>
+  <rect x="10" y="14" width="12" height="4" fill="#33CC77"/>
+  
+  <!-- Points décoratifs -->
+  <circle cx="10" cy="10" r="1" fill="#33CC77"/>
+  <circle cx="22" cy="10" r="1" fill="#33CC77"/>
+  <circle cx="10" cy="22" r="1" fill="#33CC77"/>
+  <circle cx="22" cy="22" r="1" fill="#33CC77"/>
+</svg>
