@@ -1,24 +1,22 @@
-import forms from '../Modules/forms.js';
+import components from '../Modules/component.js';
 
-function router(page){
-    // Rendu des composants
-    const components = {
-        'login': forms.loginForm(),
-        'register': forms.registerForm(),
-        'dashboard': forms.dashboard(),
+function router(page) {
+    // Récupérer le nom d'utilisateur connecté
+    const currentUser = localStorage.getItem("currentUser");
+    const username = currentUser ? JSON.parse(currentUser).username : 'Utilisateur';
+    
+    const componentsList = {
+        'login': components.loginForm(),
+        'register': components.registerForm(),
+        'dashboard': components.dashboard(username),
+        'patients': components.patients(username),
+        'appointments': components.appointments(username),
+        'finances': components.finances(username)
     };
     
-    document.getElementById('root').innerHTML = components[page] || forms.loginForm();
-    
-    // Navigation automatique (une seule fois)
-    if (!window.routerInitialized) {
-        document.addEventListener('click', (e) => {
-            if (e.target.matches('a[data-route]')) {
-                e.preventDefault();
-                router(e.target.dataset.route);
-            }
-        });
-        window.routerInitialized = true;
+    const root = document.getElementById('root');
+    if (root) {
+        root.innerHTML = componentsList[page] || components.loginForm();
     }
 }
 
