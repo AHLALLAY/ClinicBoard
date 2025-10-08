@@ -15,7 +15,7 @@ ClinicBoard est une application web monopage (SPA) développée pour remplacer l
 
 ### En 5 minutes
 1. **Cloner le projet** : `git clone https://github.com/AHLALLAY/ClinicBoard`
-2. **Lancer le serveur** : `python -m http.server 8000`
+2. **Lancer le serveur** : `npm run dev`
 3. **Ouvrir l'application** : `http://localhost:8000`
 4. **Créer un compte** : Premier utilisateur = administrateur
 5. **Commencer** : Ajouter des patients et des rendez-vous
@@ -152,8 +152,8 @@ ClinicBoard/
 
 2. **Lancer l'application** :
    ```bash
-   # Option 1: Serveur local Python (recommandé)
-   python -m http.server 8000
+   # Option 1: Serveur local express (recommandé)
+   npm run dev
    # Puis ouvrir http://localhost:8000
    
    # Option 2: Serveur local Node.js
